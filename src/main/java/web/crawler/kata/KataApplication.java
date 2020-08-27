@@ -8,6 +8,9 @@ public class KataApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(KataApplication.class, args);
+
+		Service t = new Service();
+		System.out.println(t.echo());
 	}
 
 }
