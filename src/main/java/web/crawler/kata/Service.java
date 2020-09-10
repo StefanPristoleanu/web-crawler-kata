@@ -14,11 +14,15 @@ public class Service {
 		Outputs:
 		a ^ b
 	 */
-	private void blah() {
 
-	}
+	public Integer powerMultiplication(int base, int exponent) {
 
-	public Integer powerMultiplication(int a, int b) {
+		int result = base;
+		for (int i = 1; i < exponent; i++) {
+			result *= base;
+		}
+
+		return result;
 
 	}
 }

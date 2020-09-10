@@ -25,6 +25,14 @@ class ServiceTest {
 		Integer expectedResult = 3;
 		Integer actual = testedInstance.powerMultiplication(3, 1);
 
-		assertThat(actual, is(equalTo(expected)));
+		assertThat(actual, is(equalTo(expectedResult)));
+	}
+
+	@Test
+	void testPowerMultiplicationToThePowerOf3() {
+		Integer expectedResult = 343;
+		Integer actual = testedInstance.powerMultiplication(7, 3);
+
+		assertThat(actual, is(equalTo(expectedResult)));
 	}
 }
